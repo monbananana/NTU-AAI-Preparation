@@ -54,4 +54,33 @@ I'm a student from SCU, and I'm going to NTU for my master's degree. This README
 **Model Plan (Next Step)**: Build baseline classification models (Logistic Regression, Random Forest, XGBoost) and evaluate using Accuracy, Precision, Recall, F1-score, ROC-AUC.
 
 
+## Day 3 & Day 4: Customer Churn Prediction - Full ML Pipeline
+
+**Dataset**: [Telco Customer Churn](https://www.kaggle.com/datasets/blastchar/telco-customer-churn)  
+(Telecom company customer churn data)
+
+### Work Completed:
+- Loaded and inspected the dataset (shape, data types, summary statistics)
+- **Data Cleaning**:
+  - Handled missing values in `TotalCharges`
+  - Converted data types and removed unnecessary columns (`customerID`)
+- **Exploratory Data Analysis & Visualization**:
+  - Distribution analysis: Histplots and Boxplots for numerical features (tenure, MonthlyCharges, TotalCharges)
+  - Categorical analysis: Countplots showing churn rate by Contract, InternetService, PaymentMethod, etc.
+  - Analyzed overall churn rate and relationships between features and target variable
+- **Feature Engineering**:
+  - Created new features (e.g., Tenure groups)
+  - Applied One-Hot Encoding for categorical variables
+  - Standardized numerical features
+- **Modeling & Evaluation**:
+  - Built preprocessing Pipeline using ColumnTransformer
+  - Trained baseline models: Logistic Regression and Random Forest Classifier
+  - Evaluated models using Accuracy, Precision, Recall, F1-score, and ROC-AUC
+- **Feature Importance**:
+  - Analyzed and visualized feature importance using Random Forest
+
+**Tools**: Python, Pandas, NumPy, Matplotlib, Seaborn, Scikit-Learn
+
+
+
 
