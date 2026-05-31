@@ -96,6 +96,10 @@ I'm a student from SCU, and I'm going to NTU for my master's degree. This README
 - **Model Comparison**:
   - Compared PyTorch MLP performance with previous Random Forest baseline
 - Initial observations on training process and neural network behavior
+- - **Model Optimization**:
+  - Adjusted hidden layer size from 128→64 to 256→128 for better capacity
+  - Increased epochs from 20 to 50, observed convergence around epoch 35
+  - Tuned dropout rate from 0.5 to 0.3 to reduce underfitting
 
 **Tools**: Python, Pandas, NumPy, Scikit-Learn, PyTorch (nn.Module, DataLoader, optim), Matplotlib/Seaborn  
 **Next Step (Day 6)**: Perform hyperparameter tuning (learning rate, hidden layers, epochs, dropout rate), conduct multiple experiments, and record results systematically. Consider adding BatchNorm and early stopping.
