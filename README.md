@@ -79,6 +79,26 @@ I'm a student from SCU, and I'm going to NTU for my master's degree. This README
 
 **Tools**: Python, Pandas, NumPy, Matplotlib, Seaborn, Scikit-Learn
 
+## Day 5: Telco Customer Churn Prediction with PyTorch Neural Network
+**Dataset**: [Telco Customer Churn](https://www.kaggle.com/datasets/blastchar/telco-customer-churn)  
+(Telecom company customer churn data)
+
+### Work Completed:
+- Loaded and inspected the preprocessed Telco Churn dataset
+- **Data Preprocessing**:
+  - Used `ColumnTransformer` for `StandardScaler` on numerical features and `OneHotEncoder` on categorical features
+  - Handled class imbalance consideration and train-test split (80/20, stratified)
+- **PyTorch Implementation**:
+  - Created custom `Dataset` and `DataLoader` for batch training
+  - Built a Simple MLP model (Input → 128 → 64 → 2) with ReLU activation and Dropout
+  - Implemented training loop with `CrossEntropyLoss` and `Adam` optimizer
+  - Conducted baseline training for 20 epochs and evaluated on test set
+- **Model Comparison**:
+  - Compared PyTorch MLP performance with previous Random Forest baseline
+- Initial observations on training process and neural network behavior
+
+**Tools**: Python, Pandas, NumPy, Scikit-Learn, PyTorch (nn.Module, DataLoader, optim), Matplotlib/Seaborn  
+**Next Step (Day 6)**: Perform hyperparameter tuning (learning rate, hidden layers, epochs, dropout rate), conduct multiple experiments, and record results systematically. Consider adding BatchNorm and early stopping.
 
 
 
